@@ -72,7 +72,7 @@
      <None Include="Assets\2D Unity Technologies Pack\Fonts\LuckiestGuy\LICENSE.txt" />
      <None Include="Assets\2D Unity Technologies Pack\Fonts\PressStart2P-Regular\OFL.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/Unity/Projects/Supply Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/Unity/Projects/The-Supply-Game/Supply Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity Stable/Unity 5.6.2f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
