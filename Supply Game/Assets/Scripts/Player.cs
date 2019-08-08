@@ -4,11 +4,14 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
+    [SerializeField] private AudioSource sfxSource;
+
 	[Header("Rope Grapple")]
 	public Rigidbody2D firstRopeLink; // reference to the previous element of the chain
 	public GameObject linkPrefab;
 	public int links = 7; // Number of links in the chain
 	public Vector3 hookShootOffset = new Vector3(0f, -0.1f, 0f);
+    [SerializeField] private AudioClip grappleSound;
 
 	private float firstLinkDistance = 0.25f;
 	private GameObject[] ropeLinks;
@@ -206,6 +209,8 @@ public class Player : MonoBehaviour {
 			ropeLinks.SetValue(link, i);
 		}
 
+        sfxSource.clip = grappleSound;
+        sfxSource.Play();
 		isThereARope = true;
 	}
 
